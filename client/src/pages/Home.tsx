@@ -104,7 +104,7 @@ export default function Home() {
             <FeatureCard 
               icon={<Euro className="w-6 h-6" />}
               title="1. Join Stash Club"
-              description="Click the button below and complete payment on our secure Stripe page. It only takes a moment."
+              description="Pay £1.99 for your annual Stash Club membership."
               delay={0.1}
             />
             <FeatureCard 
