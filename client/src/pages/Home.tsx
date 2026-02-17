@@ -6,7 +6,10 @@ import {
   Euro, 
   MapPin, 
   Sparkles,
-  ArrowRight
+  ArrowRight,
+  Star,
+  ChevronLeft,
+  ChevronRight
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -119,6 +122,81 @@ export default function Home() {
               description="Use your code to get 50% off every single booking you make for a year."
               delay={0.3}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#101828] mb-4" data-testid="text-reviews-title">Why customers trust us to store their bags</h2>
+            <p className="text-lg text-gray-600">Real and recent reviews from happy travelers</p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6 items-start">
+            {/* Trustpilot Summary */}
+            <div className="flex flex-col items-center text-center p-6" data-testid="trustpilot-summary">
+              <span className="text-2xl font-bold text-[#101828] mb-2">Excellent</span>
+              <div className="flex gap-0.5 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <div key={i} className="w-7 h-7 bg-[#00b67a] flex items-center justify-center">
+                    <Star className="w-4 h-4 text-white fill-white" />
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm text-gray-500 mb-1">Based on <span className="font-semibold text-[#101828] underline">3,779 reviews</span></p>
+              <div className="flex items-center gap-1 mt-1">
+                <Star className="w-4 h-4 text-[#00b67a] fill-[#00b67a]" />
+                <span className="text-sm font-semibold text-[#101828]">Trustpilot</span>
+              </div>
+            </div>
+
+            {/* Review 1 */}
+            <div className="bg-white border border-gray-200 rounded-md p-5" data-testid="card-review-1">
+              <div className="flex gap-0.5 mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <div key={i} className="w-5 h-5 bg-[#00b67a] flex items-center justify-center">
+                    <Star className="w-3 h-3 text-white fill-white" />
+                  </div>
+                ))}
+              </div>
+              <h4 className="font-bold text-[#101828] text-sm mb-2">Used the Stasher at Euston Rd</h4>
+              <p className="text-sm text-gray-600 mb-3">Used the Stasher at Euston Rd. in London. Swift service and friendly staff.</p>
+              <p className="text-xs text-gray-400"><span className="font-semibold text-[#101828]">Jan</span>, 22 hours ago</p>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-white border border-gray-200 rounded-md p-5" data-testid="card-review-2">
+              <div className="flex gap-0.5 mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <div key={i} className="w-5 h-5 bg-[#00b67a] flex items-center justify-center">
+                    <Star className="w-3 h-3 text-white fill-white" />
+                  </div>
+                ))}
+              </div>
+              <h4 className="font-bold text-[#101828] text-sm mb-2">Great Idea</h4>
+              <p className="text-sm text-gray-600 mb-3">Simple, flexible way to store luggage, with keen pricing, what's not to like!</p>
+              <p className="text-xs text-gray-400"><span className="font-semibold text-[#101828]">Stephen Docker</span>, 23 hours ago</p>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-white border border-gray-200 rounded-md p-5" data-testid="card-review-3">
+              <div className="flex gap-0.5 mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <div key={i} className="w-5 h-5 bg-[#00b67a] flex items-center justify-center">
+                    <Star className="w-3 h-3 text-white fill-white" />
+                  </div>
+                ))}
+              </div>
+              <h4 className="font-bold text-[#101828] text-sm mb-2">Everything went really smoothly</h4>
+              <p className="text-sm text-gray-600 mb-3">Everything went really smoothly, I'd certainly use Stasher again.</p>
+              <p className="text-xs text-gray-400"><span className="font-semibold text-[#101828]">The Venerable</span>, 23 hours ago</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-4">
+            <p className="text-xs text-gray-400">Showing our 5 star reviews</p>
           </div>
         </div>
       </section>
