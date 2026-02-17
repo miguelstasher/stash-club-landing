@@ -169,7 +169,7 @@ export default function Home() {
       <section className="py-12 bg-gray-50 border-t border-gray-200">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-sm text-gray-400" data-testid="text-trial-notice">
-            Currently in trial, only available to select customers. Stash Club membership is valid for 12 months from the date of purchase. 50% discount applies to the storage fee only. Terms and conditions apply.
+            Currently in trial, only available to select customers. Stash Club membership is valid for 12 months from the date of purchase. Terms and conditions apply.
           </p>
         </div>
       </section>
