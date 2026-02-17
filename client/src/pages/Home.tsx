@@ -12,6 +12,7 @@ import {
   ChevronRight
 } from "lucide-react";
 import { motion } from "framer-motion";
+import heroImage from "@assets/image_1771343025564.png";
 
 const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/YOUR_STRIPE_LINK";
 
@@ -25,14 +26,15 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+      <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-5 pointer-events-none">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-400 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4"></div>
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-300 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Text Content */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -43,7 +45,7 @@ export default function Home() {
                 <span className="text-sm font-medium text-[#026FE3]" data-testid="text-limited-offer">Limited time offer</span>
               </div>
               
-              <h1 className="text-5xl md:text-7xl font-bold text-[#101828] tracking-tight mb-6 leading-[1.1]" data-testid="text-hero-title">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#101828] tracking-tight mb-6 leading-[1.1]" data-testid="text-hero-title">
                 Join <span className="text-[#026FE3]">Stash Club</span>
               </h1>
               
@@ -55,7 +57,7 @@ export default function Home() {
                 Join in less than a minute. Start saving immediately.
               </p>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+              <div className="flex flex-col sm:flex-row items-start gap-4 mb-8">
                 <Button 
                   onClick={handleJoin}
                   className="btn-brand text-lg h-14 px-10 w-full sm:w-auto"
@@ -66,7 +68,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              <div className="flex items-center justify-center flex-wrap gap-6 text-sm text-gray-500 font-medium">
+              <div className="flex items-center flex-wrap gap-6 text-sm text-gray-500 font-medium">
                 <div className="flex items-center">
                   <Check className="w-4 h-4 text-green-500 mr-2" />
                   Unlimited usage
@@ -77,18 +79,22 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
+
+            {/* Right: Hero Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="hidden lg:block"
+            >
+              <img 
+                src={heroImage} 
+                alt="Travelers with luggage using Stasher" 
+                className="w-full h-auto rounded-3xl shadow-2xl object-cover max-h-[560px]"
+              />
+            </motion.div>
           </div>
         </div>
-      </section>
-
-      {/* Image Banner */}
-      <section className="w-full h-64 md:h-96 overflow-hidden relative">
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
-        <img 
-          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop" 
-          alt="Happy traveler walking in city" 
-          className="w-full h-full object-cover object-center"
-        />
       </section>
 
       {/* How it works */}
