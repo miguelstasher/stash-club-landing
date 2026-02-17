@@ -131,7 +131,7 @@ export default function Home() {
             
             <h2 className="text-3xl md:text-5xl font-bold mb-6 relative z-10 text-white" data-testid="text-why-join-title">Why join Stash Club?</h2>
             <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-10 relative z-10">
-              Most users save over £50 per year on luggage storage. Whether you're a digital nomad or a weekend explorer, membership pays for itself in one booking.
+              Save on all Stasher bookings on luggage storage. Whether you're a weekend explorer or a theatre regular, Stash Club pays for itself in one booking.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10 mb-10">
