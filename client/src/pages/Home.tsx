@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
             {/* Left: Text Content */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -85,7 +85,7 @@ export default function Home() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="hidden lg:block"
+              className="hidden md:block"
             >
               <img 
                 src={heroImage} 
