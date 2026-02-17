@@ -50,7 +50,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-600 mb-4 leading-relaxed" data-testid="text-hero-subtitle">
-                Only <span className="font-bold text-[#026FE3]">£1.99</span> for <span className="font-bold text-[#026FE3]">50% off</span> for a year.
+                Only <span className="font-bold text-[#026FE3]">£1.99</span> for a year. Save <span className="font-bold text-[#026FE3]">50%</span> on all bookings.
               </p>
 
               <p className="text-lg text-gray-500 mb-8" data-testid="text-hero-description">
