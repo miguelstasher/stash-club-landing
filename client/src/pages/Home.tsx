@@ -239,7 +239,7 @@ export default function Home() {
 
             <Button 
               onClick={handleJoin}
-              className="bg-white text-[#026FE3] hover:bg-gray-100 hover:text-blue-700 font-bold rounded-[34px] px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
+              className="relative z-20 bg-white text-[#026FE3] hover:bg-gray-100 hover:text-blue-700 font-bold rounded-[34px] px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all"
               data-testid="button-cta-join"
             >
               Join Stash Club
