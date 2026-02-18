@@ -14,7 +14,7 @@ import {
 import { motion } from "framer-motion";
 import heroImage from "@assets/image_1771343025564.png";
 
-const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/YOUR_STRIPE_LINK";
+const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/7sYeVde7a9CB1QX9KH9MY0o";
 
 export default function Home() {
   const handleJoin = () => {
