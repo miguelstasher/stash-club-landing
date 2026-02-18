@@ -9,16 +9,16 @@ export function Navbar() {
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">How it works</a>
-          <a href="#" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">Locations</a>
-          <a href="#" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">Help</a>
+          <a href="#how-it-works" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">How it works</a>
+          <a href="https://stasher.com/locations" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">Locations</a>
+          <a href="https://stasher.com/help" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">Help</a>
         </div>
 
         <div className="flex items-center space-x-4">
-          <a href="#" className="hidden sm:block text-sm font-medium text-gray-600 hover:text-[#026FE3]">Log in</a>
-          <button className="text-sm font-bold text-[#026FE3] bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-full transition-colors">
+          <a href="https://stasher.com/login" target="_blank" rel="noopener noreferrer" className="hidden sm:block text-sm font-medium text-gray-600 hover:text-[#026FE3]">Log in</a>
+          <a href="https://stasher.com" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-[#026FE3] bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-full transition-colors">
             Find Storage
-          </button>
+          </a>
         </div>
       </div>
     </nav>
