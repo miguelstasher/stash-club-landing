@@ -10,8 +10,6 @@ export function Navbar() {
         
         <div className="hidden md:flex items-center space-x-8">
           <a href="#how-it-works" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">How it works</a>
-          <a href="https://stasher.com/locations" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">Locations</a>
-          <a href="https://stasher.com/help" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-600 hover:text-[#026FE3] transition-colors">Help</a>
         </div>
 
         <div className="flex items-center space-x-4">

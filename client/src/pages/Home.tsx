@@ -258,45 +258,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-50 py-12 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div className="col-span-1 md:col-span-1">
-              <h3 className="font-bold text-lg mb-4 text-[#101828]">Stasher</h3>
-              <p className="text-gray-500 text-sm">
-                The world's first luggage storage network.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4 text-[#101828]">Company</h4>
-              <ul className="space-y-2 text-sm text-gray-500">
-                <li><a href="https://stasher.com/about" className="hover:text-[#026FE3]">About us</a></li>
-                <li><a href="https://stasher.com/careers" className="hover:text-[#026FE3]">Careers</a></li>
-                <li><a href="https://stasher.com/press" className="hover:text-[#026FE3]">Press</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4 text-[#101828]">Support</h4>
-              <ul className="space-y-2 text-sm text-gray-500">
-                <li><a href="https://stasher.com/help" className="hover:text-[#026FE3]">Help Center</a></li>
-                <li><a href="https://stasher.com/contact" className="hover:text-[#026FE3]">Contact Us</a></li>
-                <li><a href="https://stasher.com/terms" className="hover:text-[#026FE3]">Terms & Conditions</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4 text-[#101828]">Legal</h4>
-              <ul className="space-y-2 text-sm text-gray-500">
-                <li><a href="https://stasher.com/privacy" className="hover:text-[#026FE3]">Privacy Policy</a></li>
-                <li><a href="https://stasher.com/cookies" className="hover:text-[#026FE3]">Cookie Policy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-gray-200 text-center text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} Stasher. All rights reserved.
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
