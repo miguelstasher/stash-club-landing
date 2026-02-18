@@ -5,7 +5,9 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 h-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
         <div className="flex items-center">
-          <img src={logo} alt="Stasher Logo" className="h-8 w-auto" />
+          <a href="https://stasher.com/" target="_blank" rel="noopener noreferrer">
+            <img src={logo} alt="Stasher Logo" className="h-8 w-auto" />
+          </a>
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
