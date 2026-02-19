@@ -1,12 +1,27 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
+import { createRequire } from "module";
+
+const require = createRequire(import.meta.url);
+
+// Replit plugins: only load when running inside Replit (optional for AWS Amplify / other hosts)
+function replitPlugins() {
+  const plugins = [react()];
+  if (process.env.REPL_ID) {
+    try {
+      const runtimeErrorOverlay = require("@replit/vite-plugin-runtime-error-modal").default;
+      plugins.push(runtimeErrorOverlay());
+    } catch {
+      // ignore when not on Replit
+    }
+  }
+  return plugins;
+}
 
 export default defineConfig({
   plugins: [
-    react(),
-    runtimeErrorOverlay(),
+    ...replitPlugins(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
